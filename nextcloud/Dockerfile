@@ -58,7 +58,7 @@ RUN set -ex \
 	&& pecl install redis-3.1.2 \
 	&& docker-php-ext-enable apcu redis
 
-ENV NEXTCLOUD_VERSION 12.0.0
+ENV NEXTCLOUD_VERSION 11.0.3
 VOLUME /var/www/html
 
 RUN curl -fsSL -o nextcloud.tar.bz2 \
