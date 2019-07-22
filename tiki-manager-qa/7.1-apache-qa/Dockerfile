@@ -6,6 +6,7 @@ RUN set -xe \
 	&& DEBIAN_FRONTEND=noninteractive apt-get update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	  apache2 \
+		libapache2-mod-php7.1 \
   && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 80
