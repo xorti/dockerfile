@@ -18,6 +18,14 @@ fi
 php composer-setup.php --quiet --install-dir=/usr/local/bin --filename=composer
 RESULT=$?
 rm composer-setup.php
+
+#
+# Install Box
+#
+
+wget -O /usr/local/bin/box https://github.com/humbug/box/releases/download/3.8.4/box.phar
+chmod a+x /usr/local/bin/box
+
 exit $RESULT
 
 #
@@ -41,12 +49,7 @@ if [ $(php -r "echo version_compare(PHP_VERSION, '7.1.0', '>=') ? 'OK' : 'NOK';"
 	chmod a+x /usr/local/bin/phpunit-7
 fi
 
-#
-# Install Box
-#
 
-wget -O /usr/local/bin/box https://github.com/humbug/box/releases/download/3.8.4/box.phar
-chmod a+x /usr/local/bin/box
 
 #
 # Install paralle lint
