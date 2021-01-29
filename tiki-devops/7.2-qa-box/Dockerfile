@@ -8,7 +8,7 @@ RUN set -xe \
 	&& DEBIAN_FRONTEND=noninteractive apt-get update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y \
 		php7.2-cli php7.2-mysql php7.2-xml php7.2-zip php7.2-bz2 php7.2-curl php7.2-gd php7.2-mbstring php7.2-intl php7.2-ldap php7.2-sqlite3\
-		php-xdebug git subversion patch curl wget mysql-client unzip zip bzip2 sqlite3 python3\
+	php-xdebug git subversion patch curl wget mysql-client unzip zip bzip2 sqlite3 python3 sshpass\
 	&& ( \
 		echo '; Local configuration for PHP' \
 		echo '; priority=99' \
