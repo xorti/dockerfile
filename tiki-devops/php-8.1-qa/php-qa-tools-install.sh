@@ -23,7 +23,7 @@ rm composer-setup.php
 # Install Box
 #
 
-wget -O /usr/local/bin/box https://github.com/humbug/box/releases/download/3.8.4/box.phar
+wget -O /usr/local/bin/box https://github.com/humbug/box/releases/download/3.16.0/box.phar
 chmod a+x /usr/local/bin/box
 
 exit $RESULT
